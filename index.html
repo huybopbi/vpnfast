@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Báo</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1, p {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Trang web đã chuyển tên miền!</h1>
+            <p class="lead">Bạn sẽ được chuyển hướng đến <a href="https://vpnfast.pro">vpnfast.pro</a> trong 5 giây.</p>
+        </div>
+    </div>
+    
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://vpnfast.pro";
+        }, 5000); // Chuyển hướng sau 5 giây
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
