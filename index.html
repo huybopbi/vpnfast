@@ -8,25 +8,53 @@
     <style>
         body {
             background-color: #f8f9fa;
-            text-align: center;
-            padding: 50px;
+            font-family: 'Arial', sans-serif;
         }
 
-        .jumbotron {
+        .notification-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .notification-box {
             background-color: #007bff;
             color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-out;
         }
 
         h1, p {
+            margin: 0;
+            text-align: center;
+        }
+
+        a {
             color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="jumbotron">
+    <div class="notification-container">
+        <div class="notification-box">
             <h1 class="display-4">Trang web đã chuyển tên miền!</h1>
-            <p class="lead">Bạn sẽ được chuyển hướng đến <a href="https://vpnfast.pro" style="color: #ffcc00;">vpnfast.pro</a> trong 5 giây.</p>
+            <p class="lead">Bạn sẽ được chuyển hướng đến <a href="https://vpnfast.pro">vpnfast.pro</a> trong 5 giây.</p>
         </div>
     </div>
     
