@@ -7,24 +7,23 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: #f9e8eb; /* Màu hồng nhạt dịu dàng */
             font-family: 'Arial', sans-serif;
-        }
-
-        .notification-container {
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             height: 100vh;
+            margin: 0;
         }
 
         .notification-box {
-            background-color: #007bff;
-            color: #ffffff;
+            background-color: #ffc6d1; /* Màu hồng dịu dàng */
+            color: #4d4d4d; /* Màu chữ */
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            animation: fadeInUp 1s ease-out;
+            animation: fadeInUp 1s ease-out, pulse 1.5s infinite;
+            transition: background-color 0.3s;
         }
 
         h1, p {
@@ -33,7 +32,7 @@
         }
 
         a {
-            color: #ffcc00;
+            color: #ff1a4a; /* Màu hồng đậm cho liên kết */
             text-decoration: none;
             font-weight: bold;
         }
@@ -48,20 +47,27 @@
                 transform: translateY(0);
             }
         }
+
+        @keyframes pulse {
+            0%, 100% {
+                background-color: #ffc6d1; /* Màu hồng dịu dàng */
+            }
+            50% {
+                background-color: #ff93a1; /* Màu hồng nhạt */
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="notification-container">
-        <div class="notification-box">
-            <h1 class="display-4">Trang web đã chuyển tên miền!</h1>
-            <p class="lead">Bạn sẽ được chuyển hướng đến <a href="https://vpnfast.pro">vpnfast.pro</a> trong 10 giây.</p>
-        </div>
+    <div class="notification-box">
+        <h1 class="display-4">Trang web đã chuyển tên miền từ vpnfast.shop sang VPNFAST.PRO!</h1>
+        <p class="lead">Bạn sẽ được chuyển hướng đến trang web mới<a href="https://vpnfast.pro">vpnfast.pro</a> trong 8 giây.</p>
     </div>
     
     <script>
         setTimeout(function() {
             window.location.href = "https://vpnfast.pro";
-        }, 10000); // Chuyển hướng sau 5 giây
+        }, 8000); // Chuyển hướng sau 5 giây
     </script>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
